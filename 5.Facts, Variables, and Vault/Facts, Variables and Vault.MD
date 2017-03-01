@@ -30,19 +30,19 @@ Each of these folders have convention of configuration purpose. As you investiga
 Each of these folders, if it exists, will be picked up by an ansible play, IF there is a file named main.yml inside that folder. What does that look like now?
 
 * defaults
-* * main.yml
+** main.yml
 * files
-* * NOT SO FAST
+** NOT SO FAST
 * handlers
-* * main.yml
+** main.yml
 * meta
-* * main.yml
+** main.yml
 * tasks
-* * main.yml
+** main.yml
 * templates
-* * NOT SO FAST
+** NOT SO FAST
 * vars
-* * main.yml
+** main.yml
 
 The files and tmeplates directories are the exception. The templates/files directories are default search locations. When the file or template module are used, the playbook will look for files and templates inside those directories.
 
