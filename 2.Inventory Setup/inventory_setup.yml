@@ -60,9 +60,14 @@
         region: us-east-1
         vpc_subnet_id: "{{ vpc.subnets[0].id }}"
         assign_public_ip: true
-        exact_count: 3
+        exact_count: 1
         count_tag: "ansible_instances"
         instance_tags:
           ansible_instances: "True"
+          instance_number: "ec2 instance #{{ item }}"
         wait: true
+      with_items:
+        - 1
+        - 2
+        - 3 
       register: ec2
