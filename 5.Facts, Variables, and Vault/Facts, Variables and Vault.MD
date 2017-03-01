@@ -46,4 +46,11 @@ Each of these folders, if it exists, will be picked up by an ansible play, IF th
 
 The files and tmeplates directories are the exception. The templates/files directories are default search locations. When the file or template module are used, the playbook will look for files and templates inside those directories.
 
+We have lost focus. We were talking about variables and facts. Let's discover the subtle difference between a fact and a variable.
+
+"Information discovered from systems: Facts"
+
+Facts are variables that are set by the system, and expliciti facts we set with the set_fact module. You can turn off fact gathering by seting gather_facts to False in the playbook.
+
+
 
