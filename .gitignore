@@ -3,3 +3,4 @@ venv/
 .aws
 *.pem
 *.retry
+ansible.cfg

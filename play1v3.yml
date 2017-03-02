@@ -1,0 +1,20 @@
+---
+- hosts: all
+  remote_user: ec2-user
+  tasks:
+  - name: show some facts
+    debug:
+      msg: "System {{ inventory_hostname }} has uuid {{ ansible_product_uuid }}"
+  - name: show var1
+    debug:
+      msg: "{{ var1 }}"
+  - name: show some vars
+    debug:
+      msg: "{{ item }}"
+    with_items:
+      - 1
+      - 2
+      - 3
+  - name: show user
+    debug:
+      msg: "{{ ansible_user }}"
