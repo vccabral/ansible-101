@@ -1,0 +1,5 @@
+---
+- hosts: other
+  become: true
+  roles:
+    - { role: ansible-my-first-role }
