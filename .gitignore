@@ -4,3 +4,4 @@ venv/
 *.pem
 *.retry
 ansible.cfg
+roles/
