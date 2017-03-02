@@ -1,0 +1,13 @@
+---
+- hosts: webserver
+  become: true
+  roles:
+    - { role: geerlingguy.apache }
+- hosts: database
+  become: true
+  roles:
+    - { role: geerlingguy.mysql }
+- hosts: other
+  become: true
+  roles:
+    - { role: geerlingguy.jenkins }

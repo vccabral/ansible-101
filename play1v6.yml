@@ -1,0 +1,8 @@
+---
+- hosts: database
+  become: true
+  tasks:
+    - name: install python mysql bindings
+      yum: name=MySQL-python27 state=installed
+  roles:
+    - { role: geerlingguy.mysql, ansible_distribution_major_version: 6 }

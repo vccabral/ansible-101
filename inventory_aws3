@@ -3,7 +3,7 @@
 34.207.205.0	ansible_user=ec2-user	ansible_ssh_private_key_file=ansible_key.pem	var1=def
 
 [database]
-52.206.185.234	ansible_user=ec2-user	ansible_ssh_private_key_file=ansible_key.pem	var1=gef
+54.164.83.62	ansible_user=ec2-user	ansible_ssh_private_key_file=ansible_key.pem	var1=gef
 
 [other]
 54.172.83.105	ansible_user=ec2-user	ansible_ssh_private_key_file=ansible_key.pem	var1=123
