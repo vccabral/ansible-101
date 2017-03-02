@@ -12,3 +12,5 @@
   tasks:
   - name: install httpd
     yum: name=httpd
+  - name: ensure httpd service is running
+    service: name=httpd state=started
